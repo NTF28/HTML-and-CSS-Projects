@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Saira+Stencil+One&display=swap');
+body, html {
+    color: floralwhite;
+    background-color: #333;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.sub-container {
+    background-color: black;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 30px;
+    margin: 50px auto;
+    box-shadow: 0 0 0 2px white;
+    padding: 20px;
+    box-sizing: border-box; /* ensures padding doesn't expand the box */
+}
+.container {
+    display: flex;
+    flex-direction: column; /* stack contents vertically */
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.content {
+    margin-top: -10px;
+    margin-left: 40px;
+}
+.content .img {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+.img:hover {
+    box-shadow: 
+    0 0 5px #D3D7DA,
+    0 0 10px #D3D7DA,
+    0 0 20px #D3D7DA,
+    0 0 40px #D3D7DA,
+    0 0 80px #D3D7DA;
+}
+h2 {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: -4px;
+    text-shadow: 
+    0 0 5px #FF5F1F,
+    0 0 10px #FF5F1F,
+    0 0 20px #FF5F1F,
+    0 0 40px #FF5F1F,
+    0 0 80px #FF5F1F;;
+}
+h3 {
+    font-family: "Saira Stencil One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: -20px;
+    color: #ff1a1a;
+
+    /* Adding Neon Glow */
+    text-shadow:
+    0 0 5px #ff1a1a,
+    0 0 10px #ff1a1a,
+    0 0 20px #ff1a1a,
+    0 0 40px #ff0000,
+    0 0 80px #ff0000;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.btn-1 {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: -5px;
+    border-radius: 10px;
+    padding: 8px 18px;
+    color: #D3D7DA;
+    background-color: #FF5F1F;
+    border: 1.5px solid #D3D7DA;
+    overflow: hidden;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+}
+.btn-1::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #D3D7DA;
+    z-index: 0;
+    transition: width 0.3s ease;
+}
+.btn-1:hover::before {
+    width: 100%;
+}
+.btn-1:hover {
+    color: #FF5F1F;
+    border: 1.5px solid #D3D7DA;
+}
+.btn-1 span,
+.btn-1 {
+    position: relative;
+    z-index: 1;
+}
+.btn-1:active {
+    border-color: #FF2620;
+    color: #FF2620;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-2 {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: -5px;
+    border-radius: 10px;
+    padding: 8px 18px;
+    color: #D3D7DA;
+    background-color: #FF5F1F;
+    border: 1.5px solid #D3D7DA;
+    overflow: hidden;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+}
+.btn-2::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #D3D7DA;
+    z-index: 0;
+    transition: width 0.3s ease;
+}
+.btn-2:hover::before {
+    width: 100%;
+}
+.btn-2:hover {
+    color: #FF5F1F;
+    border: 1.5px solid #D3D7DA;
+}
+.btn-2 span,
+.btn-2 {
+    position: relative;
+    z-index: 1;
+}
+.btn-2:active {
+    border-color: #FF2620;
+    color: #FF2620;
+}
